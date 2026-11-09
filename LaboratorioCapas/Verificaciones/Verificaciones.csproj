@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+ <ItemGroup>
+  <Compile Include="../Negocio/PasswordService.cs" Link="PasswordService.cs"/>
+  <Compile Include="../Negocio/IHashService.cs" Link="IHashService.cs"/>
+  <Compile Include="../Negocio/IVerificarHashService.cs" Link="IVerificarHashService.cs"/>
+  <Compile Include="../Negocio/ICatalogoService.cs" Link="ICatalogoService.cs"/>
+  <Compile Include="../Entidades/Catalogos.cs" Link="Catalogos.cs"/>
+  <Compile Include="../Presentacion/ICatalogoView.cs" Link="ICatalogoView.cs"/>
+  <Compile Include="../Presentacion/CatalogoPresenter.cs" Link="CatalogoPresenter.cs"/>
+ </ItemGroup>
+</Project>

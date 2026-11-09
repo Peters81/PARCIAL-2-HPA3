@@ -1,0 +1,1 @@
+Guardar capturas reales principal.png, menu_plegado.png, clientes.png, empleados.png, productos.png y validacion.png. Agregar sus imágenes al README. No se requiere Craps para este laboratorio según aclaración del equipo.
