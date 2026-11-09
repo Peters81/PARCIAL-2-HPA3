@@ -49,9 +49,7 @@ Se utilizaron tonos de rojo claro y paneles para distribuir los controles. La ve
 
 Cada formulario cuenta con su archivo **`.Designer.cs`** y sus recursos **`.resx`**, lo que permite abrirlo en el diseñador de Visual Studio y editar sus controles visualmente.
 
-<!-- Captura pendiente: diseño de la pantalla principal.
 ![Diseño de la aplicación](docs/capturas/principal.png)
--->
 
 ## Organización del proyecto en capas
 
@@ -145,9 +143,7 @@ El script `01_instalar.sql` crea la estructura e incorpora **8 clientes, 5 emple
 
 Los registros de ejemplo utilizan identificadores únicos para evitar duplicarlos al repetir la instalación. El script también permite agregar los campos del perfil a la versión anterior de la tabla de usuarios sin reemplazar sus contraseñas.
 
-<!-- Captura pendiente: tablas y registros en MySQL Workbench.
 ![Base de datos MySQL](docs/capturas/base_datos.png)
--->
 
 ## Conexión entre C# y MySQL
 
@@ -165,9 +161,7 @@ Al presionar **Iniciar sesión**, el formulario notifica al presentador. Primero
 
 Después se recupera la cuenta desde MySQL, se revisa su estado y se verifica el hash. Si las credenciales son correctas y la cuenta está activa, se abre la ventana principal con la información del usuario autenticado.
 
-<!-- Captura pendiente: formulario de acceso.
 ![Inicio de sesión](docs/capturas/login.png)
--->
 
 ### 🩷 Validaciones del acceso
 
@@ -182,9 +176,7 @@ Se agregaron mensajes para indicar cuándo faltan datos, las credenciales son in
 
 La contraseña se muestra oculta en el campo de texto. Además, el botón de acceso se deshabilita mientras se procesa la solicitud para evitar intentos repetidos al mismo tiempo.
 
-<!-- Captura pendiente: mensaje de validación.
 ![Validaciones del inicio de sesión](docs/capturas/validacion.png)
--->
 
 ### 🩷 Menú lateral plegable
 
@@ -192,10 +184,9 @@ Se agregó un menú en la parte izquierda con los botones **Clientes**, **Emplea
 
 Cuando se pliega, se reduce su ancho y los botones muestran una inicial. Al desplegarlo, se recuperan los textos y tamaños originales. Esto permite aprovechar el espacio de la pantalla sin perder los accesos a los módulos.
 
-<!-- Capturas pendientes: menú abierto y plegado.
 ![Menú lateral abierto](docs/capturas/principal.png)
+
 ![Menú lateral plegado](docs/capturas/menu_plegado.png)
--->
 
 ### 🩷 Consulta de clientes, empleados y productos
 
@@ -203,11 +194,11 @@ Cada opción del menú cambia la información presentada en el `DataGridView`. E
 
 Las listas se cargan desde MySQL y se muestran en modo de solo lectura. Las tarjetas de la parte superior presentan la cantidad de registros obtenidos en cada módulo.
 
-<!-- Capturas pendientes: resultados de cada módulo.
 ![Lista de clientes](docs/capturas/clientes.png)
+
 ![Lista de empleados](docs/capturas/empleados.png)
+
 ![Lista de productos](docs/capturas/productos.png)
--->
 
 ### 🩷 Búsqueda y actualización de las listas
 
